@@ -9,47 +9,87 @@
         margin: 0;
         padding: 0;
         font-family: Arial, sans-serif;
-        background-image: url('25030031.png'); /* Set background image */
-        background-size: cover; /* Cover the entire viewport */
-        background-position: center; /* Center the background image */
+        background-image: url('25030031.png');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        line-height: 1.6;
     }
+
     .content {
-        min-height: 100vh; /* Ensures the content section takes full viewport height */
+        min-height: 100vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        color: white;
         text-align: center;
-    }
-    .education-section {
-        position: absolute;
-        top: 20px;
-        right: 20px;
         padding: 20px;
+        background: rgba(0,0,0,0.5); /* improves readability */
+    }
+
+    h1, h2 {
+        margin: 10px 0;
+    }
+
+    .education-section {
+        margin: 20px auto;
+        max-width: 90%;
+        background: rgba(0,0,0,0.4);
+        padding: 15px;
         border-radius: 10px;
         text-align: left;
     }
+
+    .education-section ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    .education-section li {
+        margin-bottom: 8px;
+    }
+
     .audio-player {
-        position: absolute;
-        bottom: 20px;
-        left: 20px;
-        padding: 10px;
-        border-radius: 5px;
-        color: white;
+        margin: 20px auto;
+        text-align: center;
     }
-    .audio-player h2 {
-        text-align: left;
-        padding: 10px;
-    }
+
     .audio-player audio {
-        width: 200px;
+        width: 100%;
+        max-width: 300px;
     }
+
     .extra-content {
         width: 100%;
-        /*background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-        color: white;
+        background: rgba(0, 0, 0, 0.6);
         padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .extra-content h1 {
+        margin-top: 0;
+    }
+
+    ul {
+        padding-left: 20px;
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 768px) {
+        h1 { font-size: 1.8em; }
+        h2 { font-size: 1.3em; }
+        body { font-size: 16px; }
+        .education-section, .extra-content {
+            padding: 15px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        h1 { font-size: 1.5em; }
+        h2 { font-size: 1.1em; }
+        body { font-size: 14px; }
+        .extra-content { padding: 10px; }
     }
 </style>
 </head>
@@ -60,7 +100,7 @@
         <h1>Sam Hanks</h1>
         <div class="education-section">
             <h2>Education</h2>
-            <ul style="list-style-type: none; padding: 0;">
+            <ul>
                 <li>English Literature and Culture @ Carnegie Mellon U. (2025)</li>
                 <li>Deans List (2019-2022)</li>
                 <li>(76-474) Software Documentation</li>
@@ -88,12 +128,12 @@
     <p><strong>Human Resources Intern</strong> | May 2024 to July 2024</p>
     <ul>
         <li>web10 is the company building the new internet, where users own their data.</li>
-            <li>Assisting in the drafting of two white papers.</li>
-            <li>Writing and editing posts on the company blog.</li>
-            <li>Editing / Revising presentation materials to clients.</li>
-            <li>Managing external communications through newsletters.</li>
-            <li>Onboarding / Hiring new employees.</li>
-            <li>Managing the paperwork included in software contracts and internally.</li>
+        <li>Assisting in the drafting of two white papers.</li>
+        <li>Writing and editing posts on the company blog.</li>
+        <li>Editing / Revising presentation materials to clients.</li>
+        <li>Managing external communications through newsletters.</li>
+        <li>Onboarding / Hiring new employees.</li>
+        <li>Managing the paperwork included in software contracts and internally.</li>
         <li>Ideated the decision for the company to emulate WhatsApps UI for authentication/encryption on their desktop experience.</li>
     </ul>
    
@@ -113,6 +153,7 @@
         <li>Designing next generation of Bookmarks.</li>
         <li>Creation of events to create crowds.</li>
     </ul>
+
     <h2>Chabad On Campus</h2>
     <p><strong>Sales Intern</strong> | May 2020 to March 2021</p>
     <ul>
@@ -126,6 +167,7 @@
         <li>Writing a modern English translation of the Roman story the Aeneid, advised by Professor Marcie Persyn.</li>
         <li>The draft of the translation was finished early in 2023, and the translation is currently being peer-reviewed by Professor Persyn and other Latin professors at the University of Pittsburgh and Carnegie Mellon University.</li>
     </ul>
+</div>
 
 </body>
 </html>
